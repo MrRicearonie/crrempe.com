@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("/assets/fonts/NotoSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("/assets/fonts/NotoSans-Bold.ttf")
+}
+
+@font-face {
+    font-family: "NotoSans-Italic";
+    src: url("/assets/fonts/NotoSans-Italic.ttf")
+}
+
+body {
+    color: snow;
+    display: grid;
+    grid-gap: 0ch;
+    grid-template-columns: auto;
+    grid-template-areas: 'navifation content';
+}
+
+a {
+    color: snow;
+    text-decoration: none;
+}
+
+.content {
+    grid-area: content;
+}
+
+.nav {
+    font-size: 24px;
+    font-family: "NotoSans-Regular";
+    margin-left: 0px;
+    margin-top: -20;
+    line-height: 50px;
+}
+
+.nav a {
+    font-family: "NotoSans-Regular";
+    color: #333333;
+
+
+}
+.navigation {
+    position: fixed; left:30px; top:2.5%;
+    background-color: snow;
+    text-align: center;
+    height: 95%;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.me {
+    padding-top: 25%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: -37%;
+}
+
+.me img {
+    margin: 0 auto;
+    border-radius: 500px;
+}
+
+.intro {
+    font-family: "NotoSans-Regular";
+    font-size: 75px;
+    margin-top: 0px;
+    color: #333333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro span {
+    font-family: "NotoSans-Bold";
+    font-size: 75px;
+    color: #000000;
+}
