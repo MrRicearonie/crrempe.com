@@ -81,3 +81,19 @@ a {
     font-size: 75px;
     color: #000000;
 }
+
+#footer {
+    background-color: snow;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 17%;
+}
+
+#footer .copyright {
+    font-size: 12px;
+    font-family: "NotoSans-Regular";
+    color: #2f3131;
+}
