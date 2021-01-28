@@ -82,6 +82,12 @@ a {
     color: #000000;
 }
 
+@media (max-width: 1400px) {
+    .navigation {
+        display: none;
+    }
+}
+
 #footer {
     background-color: snow;
     position: fixed;
