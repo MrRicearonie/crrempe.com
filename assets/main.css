@@ -1,28 +1,28 @@
 @font-face {
     font-family: "NotoSans-Regular";
-    src: url("/assets/fonts/NotoSans-Regular.ttf")
+    src: url("fonts/NotoSans-Regular.ttf")
 }
 
 @font-face {
     font-family: "NotoSans-Bold";
-    src: url("/assets/fonts/NotoSans-Bold.ttf")
+    src: url("fonts/NotoSans-Bold.ttf")
 }
 
 @font-face {
     font-family: "NotoSans-Italic";
-    src: url("/assets/fonts/NotoSans-Italic.ttf")
+    src: url("fonts/NotoSans-Italic.ttf")
 }
 
 body {
-    color: snow;
+    color: whitesmoke;
     display: grid;
-    grid-gap: 0ch;
-    grid-template-columns: auto;
+    grid-gap: 0;
+    grid-template-columns: 275px auto;
     grid-template-areas: 'navifation content';
 }
 
 a {
-    color: snow;
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -54,16 +54,16 @@ a {
 }
 
 .me {
-    padding-top: 25%;
+    padding-top: 2%;
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-left: -37%;
 }
 
 .me img {
     margin: 0 auto;
     border-radius: 500px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .intro {
@@ -72,7 +72,7 @@ a {
     margin-top: 0px;
     color: #333333;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .intro span {
@@ -80,21 +80,58 @@ a {
     font-size: 75px;
     color: #000000;
 }
+.nothing {
 
-@media (max-width: 1400px) {
+}
+
+#about {
+    background-color: snow;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 100px;
+    display: grid;
+    font-family: "NotoSans-Regular";
+    font-size: 24px;
+    color: #333333;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#about p {
+    max-width: 700px;
+}
+
+#about span {
+    font-family: "NotoSans-Bold";
+    font-size: 75px;
+    color: #000000;
+    text-align: center;
+}
+
+@media screen and (max-width: 746px) {
     .navigation {
         display: none;
+        width: 0px;
+        border-radius: 0px;
+        position: fixed; left:0px;
+    }
+    .content {
+        position: relative;
+        margin-left: -250px;
+        max-width:500px;
+    }
+    #about p {
+        max-width: 400px;
     }
 }
 
 #footer {
     background-color: snow;
-    position: fixed;
     bottom: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 17%;
 }
 
 #footer .copyright {
