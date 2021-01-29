@@ -119,7 +119,7 @@ a {
     }
     .content {
         position: relative;
-        margin-left: -125%;
+        margin-left: -450px;
         max-width:500px;
     }
     #about p {
