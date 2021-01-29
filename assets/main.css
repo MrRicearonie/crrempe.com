@@ -17,7 +17,7 @@ body {
     color: whitesmoke;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 140px auto;
+    grid-template-columns: 250px auto;
     grid-template-areas: 'navifation content';
 }
 
