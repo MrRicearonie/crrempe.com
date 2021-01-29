@@ -16,8 +16,8 @@
 body {
     color: whitesmoke;
     display: grid;
-    grid-gap: 0ch;
-    grid-template-columns: auto;
+    grid-gap: 0;
+    grid-template-columns: 140px auto;
     grid-template-areas: 'navifation content';
 }
 
