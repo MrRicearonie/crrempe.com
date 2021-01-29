@@ -59,7 +59,7 @@ a {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-left: -15%;
+    /* margin-left: -15%; */
 }
 
 .me img {
@@ -87,12 +87,15 @@ a {
     background-color: snow;
     justify-content: center;
     align-items: center;
-    margin-left: -15%;
+    /* margin-left: -15%; */
+    margin-bottom: 15px;
     margin-top: 100px;
     display: grid;
     font-family: "NotoSans-Regular";
     font-size: 24px;
     color: #333333;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 #about p {
