@@ -122,6 +122,10 @@ a {
     #about p {
         max-width: 400px;
     }
+
+    .me img {
+        width:60%;
+    }
 }
 
 #footer {
