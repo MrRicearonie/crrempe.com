@@ -19,6 +19,7 @@ body {
     grid-gap: 0;
     grid-template-columns: 256px auto;
     grid-template-areas: 'navifation content';
+    font-family: "NotoSans-Regular";
 }
 
 a {
@@ -26,17 +27,20 @@ a {
     text-decoration: none;
 }
 
+.content {
+    /* max-width: 1000px; */
+    /* justify-content: center; */
+    grid-area: content;
+}
 
 .nav {
     font-size: 24px;
-    font-family: "NotoSans-Regular";
     margin-left: 0px;
     margin-top: -20;
     line-height: 50px;
 }
 
 .nav a {
-    font-family: "NotoSans-Regular";
     color: #333333;
 }
 
@@ -65,7 +69,6 @@ a {
 }
 
 .intro {
-    font-family: "NotoSans-Regular";
     font-size: 75px;
     margin-top: 0px;
     color: #333333;
@@ -84,8 +87,8 @@ a {
     align-items: center;
     margin-bottom: 15px;
     margin-top: 100px;
+    padding: 20px 0px 30px 0px;
     display: grid;
-    font-family: "NotoSans-Regular";
     font-size: 24px;
     color: #333333;
     border-radius: 25px;
@@ -101,6 +104,75 @@ a {
     font-size: 75px;
     color: #000000;
     text-align: center;
+}
+
+#projects {
+    margin-top: 100px;
+    font-size: 75px;
+    padding: 20px 0px 30px 0px;
+    color: #333333;
+    justify-content: center;
+    text-align: center;
+}
+
+.project {
+    font-size: 24px;
+    margin-top: 25px;  
+    text-align: left;
+}
+
+.project span {
+    font-family: "NotoSans-Bold";
+    font-size: 50px;
+    color: #000000;
+    margin-left: 2%;
+}
+
+.project a {
+    font-size: 16px;
+    margin-left: 2.2%;
+}
+
+.project a:hover {
+    font-size: 18px;
+    color: #333333;
+}
+
+.discription {
+    background-color: snow;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 25px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.30), 0 3.5px 3px rgba(0, 0, 0, 0.22);
+}
+
+.project p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.project-image {
+    border-radius: 25px;
+    width: 30%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.wificonnect {
+    background-color: rgb(98, 177, 244);
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.wada {
+    margin-top: 25px;
+    background-color: rgb(63, 169, 108);
+    height: 500px;
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 @media only screen and (max-width: 1032px) {
@@ -138,6 +210,10 @@ a {
 
     .intro {
         font-size: 50px;
+    }
+
+    .project-image {
+        width: 46.5%;
     }
 }
 
