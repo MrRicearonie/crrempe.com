@@ -119,6 +119,10 @@ a {
         margin: 0;
     }
 
+    #about {
+        margin-top: 80px;
+    }
+
     #about p {
         max-width: 90%;
         margin-left: 5%;
