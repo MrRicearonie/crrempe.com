@@ -212,6 +212,22 @@ a {
         font-size: 50px;
     }
 
+    .project {
+        text-align: center;
+    }
+
+    .project span {
+        font-size: 40px;
+    }
+    
+    .project a {
+        font-size: 24px;
+    }
+
+    .discription {
+        text-align: left;
+    }
+
     .project-image {
         width: 46.5%;
     }
