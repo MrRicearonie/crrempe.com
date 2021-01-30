@@ -126,6 +126,7 @@ a {
 
     .me img {
         width:60%;
+        box-shadow: none;
     }
 }
 
