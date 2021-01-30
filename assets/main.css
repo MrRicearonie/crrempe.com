@@ -47,6 +47,13 @@ a {
 
 .nav a {
     color: #333333;
+
+    -webkit-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -moz-transition: 0.15s color linear;
+    -ms-transition: 0.15s color linear;
+    -o-transition: 0.15s color linear;
+    transition: 0.15s color linear;
 }
 
 .nav a:hover {
@@ -145,6 +152,13 @@ a {
 .project a:hover {
     font-size: 18px;
     color: #333333;
+
+    -webkit-transition: 0.15s color linear, 0.15s font-size linear;
+    -moz-transition: 0.15s color linear, 0.15s font-size linear;
+    -moz-transition: 0.15s color linear, 0.15s font-size linear;
+    -ms-transition: 0.15s color linear, 0.15s font-size linear;
+    -o-transition: 0.15s color linear, 0.15s font-size linear;
+    transition: 0.15s color linear, 0.15s font-size linear;
 }
 
 .discription {
@@ -182,6 +196,67 @@ a {
     border-radius: 25px;
     width: 100%;
     box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#contact {
+    background-color: rgb(117, 117, 117);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 100px;
+    padding: 20px 0px 30px 0px;
+    display: grid;
+    font-size: 20px;
+    color: #333333;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    
+}
+
+#contact h1 {
+    font-size: 40px;
+    margin-top: -3%;
+    color: rgba(245, 245, 245, 0.644);
+}
+
+.social img {
+    width:50px;
+    margin-left: 30px;
+    margin-top: -1%;
+}
+
+.social img:hover {
+    -webkit-filter: sepia(0.5);
+    -moz-filter: sepia(0.5);
+    -ms-filter: sepia(0.5);
+    -o-filter: sepia(0.5);
+    filter: sepia(0.5);
+
+    -webkit-transition: 0.15s -webkit-filter linear;
+    -moz-transition: 0.15s -moz-filter linear;
+    -moz-transition: 0.15s filter linear;
+    -ms-transition: 0.15s -ms-filter linear;
+    -o-transition: 0.15s -o-filter linear;
+    transition: 0.15s filter linear;
+}
+
+#footer {
+    margin-top: -2%;
+    background-color: rgb(117, 117, 117);
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 1.67%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 100% 12px rgba(0, 0, 0, 0.22);
+}
+
+#footer .copyright {
+    font-size: 15px;
+    font-family: "NotoSans-Regular";
+    color: rgba(245, 245, 245, 0.644);
 }
 
 @media only screen and (max-width: 1032px) {
@@ -235,6 +310,10 @@ a {
         text-decoration: underline;
     }
 
+    .project a:hover {
+        font-size: 26px;
+    }
+
     .discription {
         text-align: left;
     }
@@ -242,18 +321,4 @@ a {
     .project-image {
         width: 46.5%;
     }
-}
-
-#footer {
-    background-color: snow;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#footer .copyright {
-    font-size: 14px;
-    font-family: "NotoSans-Regular";
-    color: #2f3131;
 }
