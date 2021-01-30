@@ -33,6 +33,12 @@ a {
     grid-area: content;
 }
 
+.logo {
+    margin-top: 25px;
+    margin-bottom: -15px;
+    width: 125px;
+}
+
 .nav {
     font-size: 24px;
     margin-left: 0px;
@@ -248,7 +254,7 @@ a {
 }
 
 #footer .copyright {
-    font-size: 12px;
+    font-size: 14px;
     font-family: "NotoSans-Regular";
     color: #2f3131;
 }
