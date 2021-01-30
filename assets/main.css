@@ -44,6 +44,10 @@ a {
     color: #333333;
 }
 
+.nav a:hover {
+    color:#8a8a8a;
+}
+
 .navigation {
     position: fixed; left:30px; top:2.5%;
     background-color: snow;
