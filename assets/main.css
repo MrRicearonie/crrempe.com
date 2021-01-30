@@ -322,6 +322,11 @@ a {
         width: 46.5%;
     }
 
+    #footer {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
     .social img {
         width: 40px;
         margin-left: 20px;
