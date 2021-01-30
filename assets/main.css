@@ -243,7 +243,7 @@ a {
 }
 
 #footer {
-    margin-top: -2%;
+    margin-top: -15px;
     background-color: rgb(117, 117, 117);
     bottom: 0;
     justify-content: center;
@@ -320,5 +320,10 @@ a {
 
     .project-image {
         width: 46.5%;
+    }
+
+    .social img {
+        width: 40px;
+        margin-left: 20px;
     }
 }
