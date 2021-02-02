@@ -28,8 +28,8 @@ a {
 }
 
 .content {
-    /* max-width: 1000px; */
-    /* justify-content: center; */
+    max-width: 1000px;
+    margin: 0 auto;
     grid-area: content;
 }
 
@@ -264,6 +264,11 @@ a {
         grid-template-columns: auto;
         justify-content: center;
     }
+
+    .content {
+        max-width: 800px;
+    }
+
     .navigation {
         display: none;
         width: 0%;
