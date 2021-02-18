@@ -336,4 +336,12 @@ a {
         width: 40px;
         margin-left: 20px;
     }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+          color: #1e1f23;
+        }
+      }
+      
+      
 }
