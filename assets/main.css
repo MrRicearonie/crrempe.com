@@ -227,7 +227,7 @@ a {
 }
 
 .social > * {
-    display:inline-grid;
+    display:inline-block;
 }
 
 .social img {
