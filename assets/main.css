@@ -345,6 +345,7 @@ a {
     .social > * {
         border: 3px solid #fff;
         padding: 20px;
+        display: flex;
     }
 
     .social img {
