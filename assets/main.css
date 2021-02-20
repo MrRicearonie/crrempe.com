@@ -353,13 +353,9 @@ a {
         margin-left: 20px;
     }
 
-    .git {
-        margin-left: 0%;
-        position:relative;
-    }
+    .git,
     .linkedin {
-        margin-left: 0%;
-        position:relative;
+        width: auto;
     }
 
     @media (prefers-color-scheme: dark) {
