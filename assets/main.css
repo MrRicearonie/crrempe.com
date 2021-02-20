@@ -345,6 +345,7 @@ a {
     .social > * {
         margin-left: 0%;
         position:relative;
+        flex-direction: column-reverse;
     }
 
     .social img {
