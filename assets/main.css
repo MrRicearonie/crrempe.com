@@ -343,7 +343,7 @@ a {
     }
 
     .social > * {
-        border: 3px solid #fff;
+        border: 3px solid rgb(211, 18, 18);
         padding: 20px;
         display: flex;
     }
