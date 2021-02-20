@@ -343,9 +343,8 @@ a {
     }
 
     .social > * {
-        margin-left: 0%;
-        position:relative;
-        flex-direction: column-reverse;
+        border: 3px solid #fff;
+        padding: 20px;
     }
 
     .social img {
@@ -355,8 +354,10 @@ a {
 
     .git,
     .linkedin {
+        width: 50%;
         float: left;
         padding: 20px;
+        border: 2px solid red;
     }
 
     @media (prefers-color-scheme: dark) {
