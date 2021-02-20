@@ -347,6 +347,13 @@ a {
         margin-left: 20px;
     }
 
+    .git {
+        margin-left: 0%;
+    }
+    .linkedin {
+        margin-left: 0%;
+    }
+
     @media (prefers-color-scheme: dark) {
         body {
           color: #1e1f23;
