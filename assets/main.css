@@ -342,23 +342,9 @@ a {
         border-bottom-right-radius: 25px;
     }
 
-    .social > * {
-        border: 3px solid #fff;
-        padding: 20px;
-        display: flex;
-    }
-
     .social img {
         width: 40px;
-        margin-left: 0%;
-    }
-
-    .git,
-    .linkedin {
-        width: 50%;
-        float: left;
-        padding: 20px;
-        border: 2px solid red;
+        margin-left: 20px;
     }
 
     @media (prefers-color-scheme: dark) {
