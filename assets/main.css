@@ -342,15 +342,15 @@ a {
         border-bottom-right-radius: 25px;
     }
 
-    .social {
-        border: 3px solid rgb(211, 18, 18);
+    .social > * {
+        border: 3px solid #fff;
         padding: 20px;
         display: flex;
     }
 
     .social img {
         width: 40px;
-        margin-left: 20px;
+        margin-left: 0%;
     }
 
     .git,
