@@ -179,7 +179,10 @@ a {
     margin-left: 5%;
 }
 .project-images > * {
+    display: -moz-inline-stack;
     display:inline-flex;
+    vertical-align: top;
+    *display: inline;
     width: 30%;
     margin-left: 2%;
 }
@@ -232,7 +235,10 @@ a {
 }
 
 .social > * {
+    display: -moz-inline-stack;
     display:inline-block;
+    vertical-align: center;
+    *display: inline;
 }
 
 .social img {
