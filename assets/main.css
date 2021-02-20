@@ -355,7 +355,8 @@ a {
 
     .git,
     .linkedin {
-        width: auto;
+        float: left;
+        padding: 20px;
     }
 
     @media (prefers-color-scheme: dark) {
