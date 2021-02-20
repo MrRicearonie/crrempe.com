@@ -344,6 +344,7 @@ a {
 
     .social > * {
         margin-left: 0%;
+        position:relative;
     }
 
     .social img {
