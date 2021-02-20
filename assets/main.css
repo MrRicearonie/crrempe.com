@@ -342,6 +342,10 @@ a {
         border-bottom-right-radius: 25px;
     }
 
+    .social > * {
+        margin-left: 0%;
+    }
+
     .social img {
         width: 40px;
         margin-left: 20px;
