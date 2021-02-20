@@ -228,6 +228,7 @@ a {
 
 .social > * {
     display:inline-block;
+    font-size: 0;
 }
 
 .social img {
