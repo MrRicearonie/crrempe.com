@@ -353,9 +353,11 @@ a {
 
     .git {
         margin-left: 0%;
+        position:relative;
     }
     .linkedin {
         margin-left: 0%;
+        position:relative;
     }
 
     @media (prefers-color-scheme: dark) {
