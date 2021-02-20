@@ -227,7 +227,7 @@ a {
 }
 
 .social > * {
-    display:inline-block;
+    display:inline-flex;
 }
 
 .social img {
@@ -339,10 +339,6 @@ a {
     #footer {
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
-    }
-
-    .social > * {
-        display:inline-block;
     }
 
     .social img {
