@@ -178,10 +178,15 @@ a {
     width: 90%;
     margin-left: 5%;
 }
-
-.project-image {
-    border-radius: 25px;
+.project-images > * {
+    display:inline-flex;
     width: 30%;
+    margin-left: 2%;
+}
+
+.project-images img {
+    border-radius: 25px;
+    width: 100%;
     margin-left: 2%;
     margin-bottom: 2%;
     box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -228,7 +233,6 @@ a {
 
 .social > * {
     display:inline-block;
-    font-size: 0;
 }
 
 .social img {
@@ -333,8 +337,13 @@ a {
         text-align: left;
     }
 
-    .project-image {
+    .project-images > * {
         width: 46.5%;
+        margin-left: 0px;
+    }
+
+    .project-images img {
+        margin-left: 0%;
     }
 
     #footer {
