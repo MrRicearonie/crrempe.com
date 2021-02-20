@@ -61,6 +61,7 @@ a {
 }
 
 .navigation {
+    overflow: hidden;
     position: fixed; left:30px; top:2.5%;
     background-color: snow;
     text-align: center;
@@ -70,9 +71,13 @@ a {
     box-shadow: 0 0 30px rgba(0,0,0,0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+.hide {
+    overflow: hidden;
+}
+
 .me {
     width:100%;
-    padding-top: 2%;
+    padding-top: 25%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -102,7 +107,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-    margin-top: 100px;
+    margin-top: 30%;
     padding: 20px 0px 30px 0px;
     display: grid;
     font-size: 24px;
@@ -219,6 +224,10 @@ a {
     font-size: 40px;
     margin-top: -3%;
     color: rgba(245, 245, 245, 0.644);
+}
+
+.social > * {
+    display:inline-block;
 }
 
 .social img {
@@ -344,4 +353,27 @@ a {
       }
       
       
+}
+
+@keyframes slideup {
+    0% {
+        margin-bottom: 50%;
+        opacity: 0%;
+    }
+
+    100% {
+        margin-bottom: 0%;
+        opacity: 100%;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        margin-top: -100%;
+        opacity: 0%;
+    }
+    100% {
+        margin-top: 0%;
+        opacity: 100%;
+    }
 }

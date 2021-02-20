@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel=icon href=assets/photos/LogoCode.png type="image/png">
     <title>Christopher Rempe</title>
+    <link href="assets/dist/aos.css" rel="stylesheet">
     <link href="assets/main.css" rel="stylesheet">
 </head>
 <body>
@@ -30,10 +31,16 @@
         </div>
     </div>
     <div class="content">
-        <div class="me">
-            <img src="assets/photos/SquareMe.png" draggable="false"/><br/>
-            <p class="intro">Hi, I'm</br><span>Christopher Rempe</span></p>
+        <div class="container">
+            <div class="hide">
+                <div class="me">
+                    <img src="assets/photos/SquareMe.png" draggable="false"/><br/>
+                    <p class="intro">Hi, I'm</br><span>Christopher Rempe</span></p>
+                </div>
+    
+            </div>
         </div>
+        
         <div id="about">
             <span>Who am I?</span><br/>
             <p>I am a <b>Computer Science Major</b>, a <b>Business Owner</b>, and an amateur <b>Photographer</b>. When I'm not buried in my computer, you'll find me riding on my <b>OneWheel</b>, finding beautiful places to take a <b>hike</b>, or just hanging out with <b>friends</b>.</p>
@@ -42,30 +49,40 @@
             Projects
             <div class="project">
                 <div class="wificonnect">
-                    <span>Wi-Fi Connect</span><br/>
-                    <a href="https://wificonnect.xyz/">Website</a><a href="https://itunes.apple.com/us/app/wi-fi-connect/id1049217112">App Store</a><br/>
-                    <div class="discription">
-                        <p>Wi-Fi Connect is the first app that changes the way we connect to Wi-Fi for the better. Forget sharing passwords! Let your friends connect to Wi-Fi designed for the 21st century.</p>
-                    </div>
-                    <div class="project-images">
-                        <img class="project-image" src="assets/photos/projects/wificonnect/1.jpg">
-                        <img class="project-image" src="assets/photos/projects/wificonnect/2.jpg">
-                        <img class="project-image" src="assets/photos/projects/wificonnect/3.jpg">
-                    </div>
+
+                        <span>Wi-Fi Connect</span><br/>
+                        <a href="https://wificonnect.xyz/">Website</a><a href="https://itunes.apple.com/us/app/wi-fi-connect/id1049217112">App Store</a><br/>
+                        <div class="discription">
+                            <p>Wi-Fi Connect is the first app that changes the way we connect to Wi-Fi for the better. Forget sharing passwords! Let your friends connect to Wi-Fi designed for the 21st century.</p>
+                        </div>
+                        <div class="project-images">
+                            <img class="project-image" src="assets/photos/projects/wificonnect/1.jpg">
+                            <img class="project-image" src="assets/photos/projects/wificonnect/2.jpg">
+                            <img class="project-image" src="assets/photos/projects/wificonnect/3.jpg">
+                        </div>
                 </div>
-                <!-- <div class="wada">
-                    <span>WADA</span> 
-                </div> -->
             </div>
         </div>
         <div id="contact">
             <h1>Contact</h1>
-            <div class="social">
-                <a href="https://www.github.com/mrricearonie"><img src="assets/photos/contact/github.png"/></a>
-                <a href="https://www.linkedin.com/in/christopher-rempe-4a41a7137"><img src="assets/photos/contact/linkedin.png"/></a>
-                <a href="https://www.instagram.com/mrricearonie/"><img src="assets/photos/contact/instagram.png"/></a>
-                <a href="https://twitter.com/MrRicearonie"><img src="assets/photos/contact/twitter.png"/></a>
-                <a href="mailto:christopherrrempe@gmail.com"><img src="assets/photos/contact/email.png"/></a>
+            <div class="hide">
+                <div class="social">
+                    <div class="aos-item" data-aos="fade-up" data-aos-once="true">
+                        <a href="https://www.github.com/mrricearonie"><img src="assets/photos/contact/github.png"/></a>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="50" data-aos-once="true">
+                        <a href="https://www.linkedin.com/in/christopher-rempe-4a41a7137"><img src="assets/photos/contact/linkedin.png"/></a>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                        <a href="https://www.instagram.com/mrricearonie/"><img src="assets/photos/contact/instagram.png"/></a>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="150" data-aos-once="true">
+                        <a href="https://twitter.com/MrRicearonie"><img src="assets/photos/contact/twitter.png"/></a>
+                    </div>
+                    <div class="aos-item" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                        <a href="mailto:christopherrrempe@gmail.com"><img src="assets/photos/contact/email.png"/></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="footer">
@@ -77,6 +94,13 @@
             </p>
         </div>
     </div>
+
+    <script src="assets/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
 </body>
 </html>
     
