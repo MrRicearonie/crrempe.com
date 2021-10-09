@@ -1,0 +1,100 @@
+@media only screen and (max-width: 992px) {
+
+/* MAIN CSS */
+    .mobileBox{
+        display: flex;
+        position:absolute;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        bottom: 90px;
+        height: auto;
+        width: 100vw;
+    }
+
+    .contentBox {
+        position: static;
+        width: 95vw;
+        max-height: 100%;
+    }
+
+    .pagePadding {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        overflow: hidden;
+    }
+
+/* ABOUT CSS */
+    .rightsideCover {
+        opacity: 0%;
+        display: none;
+        z-index: 1;
+    }
+
+    #myPicMobile{
+        display: flex;
+        position:absolute;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #myPic {
+        position: static;
+        height: 75vw;
+        width: 75vw;
+        top: 0%;
+        right: 0%;
+    }
+
+    .myPicPositionStart {
+        margin: 0 0 0 0;
+    }
+    
+    .myPicPositionProjects {
+        margin: 0 -1024px 0 0;
+    }
+
+    .myPicPositionEnd{
+        margin: 0 -1024px 0 0;
+    }
+
+    #about {
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        left: 0%;
+    }
+
+    .aboutStart {
+        right: 0%;
+        margin-left: -100%;
+    }
+
+    .aboutEnd {
+        right: 0%;
+        margin-left: 0%;
+    }
+
+    .social img {
+        width: 5vw;
+    }
+
+/* PROJECTS CSS */
+
+    #projects {
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        height: 100%;
+    }
+    
+    .container {
+        height: 100%;
+    }
+
+    #icons {
+        opacity: 0%;
+        display: none;
+    }
+}

@@ -1,0 +1,175 @@
+/* CSS for the about section */
+
+/* Key Frames */
+@keyframes myPic_start {
+    0% {
+        opacity: 0%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* About */
+
+#hi {
+    z-index: 6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    /* margin: -25px 5px 0 0; */
+
+    transition: opacity 1.3s; /* vendorless fallback */
+    -o-transition: opacity 1.3s; /* opera */
+    -ms-transition: opacity 1.3s; /* IE 10 */
+    -moz-transition: opacity 1.3s; /* Firefox */
+    -webkit-transition: opacity 1.3s; /*safari and chrome */
+}
+
+.hiStart{
+    opacity: 0%;
+}
+
+.hiEnd {
+    opacity: 100%;
+}
+
+#myPic{
+    border-radius: 100%;
+    max-height: 512px;
+    max-width: 512px;
+    box-shadow: 0 5px 50px rgb(0, 0, 0), 0 15px 30px rgba(0, 0, 0, 0.22);
+    top: 50%;
+    right: 50vw;
+    z-index: 4;
+
+    position: absolute;    
+}
+
+.myPicPositionStart {
+    margin: -256px -256px 0 0;
+}
+
+.myPicTransStart {
+    transition: margin 1.3s, opacity 1.3s; /* vendorless fallback */
+    -o-transition: margin 1.3s, opacity 1.3s; /* opera */
+    -ms-transition: margin 1.3s, opacity 1.3s; /* IE 10 */
+    -moz-transition: margin 1.3s, opacity 1.3s; /* Firefox */
+    -webkit-transition: margin 1.3s, opacity 1.3s; /*safari and chrome */
+}
+
+.myPicPositionEnd {
+    margin: -256px -556px 0 0;
+    opacity: 100%;
+}
+
+.myPicPositionProjects {
+    margin: 256px -556px 0 0;
+    opacity: 0%;
+}
+
+#about {
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#about b {
+    font-family: "NotoSans-Bold";
+}
+
+.aboutStart {
+    right: 30%;
+    opacity: 0%;
+}
+
+.aboutStartTrans {
+    transition: all 1.3s; /* vendorless fallback */
+    -o-transition: all 1.3s; /* opera */
+    -ms-transition: all 1.3s; /* IE 10 */
+    -moz-transition: all 1.3s; /* Firefox */
+    -webkit-transition: all 1.3s; /*safari and chrome */
+}
+
+.aboutEnd {
+    right: 50%;
+    margin-left: 25px;
+}
+
+.aboutTransition {
+    margin-top: -512px;
+    right: 50%;
+    margin-left: 25px;
+    opacity: 0%;
+}
+
+.rightsideCover {
+    background-color: #2b2b2b;
+    position: absolute;
+    margin-top: 2.5%;
+    height: 75%;
+    min-width: 49vw;
+    left: 50vw;
+    z-index: 2;
+}
+
+#contact {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: -30px;
+    display: grid;
+    
+}
+
+#contact h1 {
+    font-size: 40px;
+    margin-top: -3%;
+    color: rgba(245, 245, 245, 0.644);
+}
+
+.social > * {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    zoom: 1;
+    *display: inline;
+    _height: 250px;
+}
+
+.social img {
+    width:50px;
+    margin-left: 30px;
+    margin-top: -1%;
+}
+
+.social img:hover {
+    -webkit-filter: sepia(0.5);
+    -moz-filter: sepia(0.5);
+    -ms-filter: sepia(0.5);
+    -o-filter: sepia(0.5);
+    filter: sepia(0.5);
+
+    -webkit-transition: 0.15s -webkit-filter linear;
+    -moz-transition: 0.15s -moz-filter linear;
+    -moz-transition: 0.15s filter linear;
+    -ms-transition: 0.15s -ms-filter linear;
+    -o-transition: 0.15s -o-filter linear;
+    transition: 0.15s filter linear;
+}
+
+.projects_button_normal {
+    background-color: #0097a7;
+}
+
+.projects_button_over {
+    background-color: #4dd0e1;
+}

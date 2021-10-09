@@ -1,0 +1,206 @@
+/* CSS shared between about and projects */
+
+/* Keyframes */
+@keyframes button_press{
+    0% {
+        opacity: 100%;
+    }
+    30% {
+        transform: scale(1.075);
+        -ms-transform:scale (1.075);
+        -webkit-transform:scale(1.075, 1.075);
+        -moz-transform: scale(1.075);
+        -o-transform: scale(1.1);
+    }
+    32% {
+        transform: scale(1.075);
+        -ms-transform:scale (1.075);
+        -webkit-transform:scale(1.075, 1.075);
+        -moz-transform: scale(1.075);
+        -o-transform: scale(1.075);
+    }
+    100% {
+        transform: scale(0.1);
+        -ms-transform: scale(0.1);
+        -webkit-transform:scale(0.1, 0.1);
+        -moz-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        opacity: 0%;
+    }
+}
+
+@keyframes button_show{
+    0%{
+        transform: scale(0.1);
+        -ms-transform: scale(0.1);
+        -webkit-transform:scale(0.1, 0.1);
+        -moz-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        opacity: 0%;
+    }
+    100%{
+            transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform:scale(1, 1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+/* Fonts */
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../fonts/NotoSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("../fonts/NotoSans-Bold.ttf")
+}
+
+@font-face {
+    font-family: "NotoSans-Italic";
+    src: url("../fonts/NotoSans-Italic.ttf")
+}
+
+/* HTML */
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+body {
+    background-color: #2b2b2b;
+    color:whitesmoke;
+    font-family: "NotoSans-Regular";
+}
+
+.pagePadding {
+    padding-left: 100px;
+}
+
+#header{
+    text-align: center;
+    height: 100px;
+}
+
+span{
+    font-family: "NotoSans-Bold";
+}
+
+.content{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    
+    display: relative;
+    font-size: 52px;
+    border-radius: 50px;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    overflow: hidden;
+}
+
+.contentBox {
+    position: fixed;
+    max-width: 600px;
+    max-height: 500px;
+    width: 49vw;
+    overflow-y: auto;
+    font-size: 0.5em;
+    top: 50%;
+    overflow-x: hidden;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.transitionSpeed {
+    transition: margin 750ms, opacity 750ms; /* vendorless fallback */
+    -o-transition: margin 750ms, opacity 750ms; /* opera */
+    -ms-transition: margin 750ms, opacity 750ms; /* IE 10 */
+    -moz-transition: margin 750ms, opacity 750ms; /* Firefox */
+    -webkit-transition: margin 750ms, opacity 750ms; /*safari and chrome */
+}
+
+.hidden {
+    display: none;
+}
+
+.opacityZero {
+    opacity: 0%;
+}
+
+.projectsBackground{
+    background-color: #4dd0e1;
+}
+
+.projectsColorContrast{
+    color: #009faf;
+}
+
+.aboutBackground{
+    background-color: rgb(129, 199, 132);
+}
+
+.aboutColorContrast {
+    color: #519657;
+}
+
+.aboutColorLight {
+    background-color: #b2fab4;
+}
+
+.button_basics {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: 0 auto;
+    width: 140px;
+    text-align: center;
+    border-radius: 10rem;
+    opacity: 0%;
+    z-index: 100;
+}
+
+.button_text {
+    padding: .75rem 1.25rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .15rem;
+}
+
+.button_pressed {
+    -webkit-animation: button_press 500ms forwards;
+    animation: button_press 500ms forwards;
+}
+
+.button_enter {
+    -webkit-animation: button_show 250ms forwards;
+    animation: button_show 250ms forwards;
+}
+
+.front {
+    z-index: 5;
+}
+
+.back {
+    z-index: 1;
+}

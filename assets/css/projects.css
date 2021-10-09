@@ -1,0 +1,270 @@
+/* CSS for the projects section */
+
+/* Projects */
+
+#astranno a {
+    color: whitesmoke;
+}
+
+.container {
+    position: relative;
+    width: 95%;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.about_button_normal {
+    background-color: #519657;
+}
+
+.about_button_over {
+    background-color: #77c47d;
+}
+
+#projects {
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 4;
+    left: 50%;
+    margin-right: 25px;
+}
+
+.project {
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.projectsHide {
+    margin-top: -512px;
+    opacity: 0%;
+}
+
+/* put project to the right of the current project */
+.nextProject {
+    opacity: 0%;
+    margin-left: 600px;
+    overflow-x: hidden;
+}
+
+/* Show the project */
+.currentProject {
+    opacity: 100%;
+}
+
+/* put projext to the ledt of the current project */
+.prevProject {
+    opacity: 0%;
+    margin-left: -600px;
+    overflow-x: hidden;
+}
+
+/* placeholder for projects that are not next or previous */
+.otherProject {
+    opacity: 0%;
+}
+
+.icon {
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.iconsHide {
+    margin-top: 512px;
+    opacity: 0%;
+}
+
+.websiteButton {
+    text-decoration: none;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: 0 auto;
+    width: 140px;
+    text-align: center;
+    border-radius: 10rem;
+}
+
+#astranno {
+    z-index: 5;
+}
+
+#astrannoTitle {
+    color:#5bb9e9;
+}
+
+#astrannoIcon {
+    max-width: 50%;
+    max-height: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.astrannoWebsite_normal {
+    background-color: #5bb9e9;
+}
+
+.astrannoWebsite_over {
+    background-color: #73ccf8;
+}
+
+#wificonnect {
+    z-index: 6;
+}
+
+#wificonnectTitle{
+    color: #62B1F4;
+}
+
+#wificonnectButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wificonnectWebsite_normal {
+    background-color: #62B1F4;
+}
+
+.wificonnectWebsite_over {
+    background-color: #70bcff;
+}
+
+#wificonnectIcon {
+    max-width: 50%;
+    max-height: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#pastSites {
+    z-index: 7;
+}
+
+#pastSitesTitle {
+    color: #757575;
+}
+
+.past_normal {
+    background-color: #757575;
+}
+
+.past_over {
+    background-color: #999999;
+}
+
+#pastSitesIcon {
+    max-width: 50%;
+    max-height: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#icons {
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    right: 50%;
+    margin-right: 25px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nextIcon {
+    opacity: 0%;
+}
+
+.currentIcon {
+    opacity: 100%;
+}
+
+.prevIcon {
+    opacity: 0%;
+}
+
+.project_transition {
+    transition: all 500ms; /* vendorless fallback */
+    -o-transition: all 500ms; /* opera */
+    -ms-transition: all 500ms; /* IE 10 */
+    -moz-transition: all 500ms; /* Firefox */
+    -webkit-transition: all 500ms; /*safari and chrome */
+}
+
+.projects_buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 34px;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10rem;
+    z-index: 500;
+
+    transition: all 500ms; /* vendorless fallback */
+    -o-transition: all 500ms; /* opera */
+    -ms-transition: all 500ms; /* IE 10 */
+    -moz-transition: all 500ms; /* Firefox */
+    -webkit-transition: all 500ms; /*safari and chrome */
+}
+
+.project_button_normal {
+    background-color: #a4a4a4;
+}
+
+.project_button_over {
+    background-color: #757575;
+}
+
+.arrow {
+    height: 17.5px;
+}
+
+#next_arrow {
+    -webkit-transform: translate(1px, -26px);
+    -moz-transform: translate(1px, -26px);
+    -o-transform: translate(1px, -26px);
+    -ms-transform: translate(1px, -26px);
+    transform: translate(1px, -26px);
+}
+
+#prev_arrow {
+    -webkit-transform: translate(-1px, -26px);
+    -moz-transform: translate(-1px, -26px);
+    -o-transform: translate(-1px, -26px);
+    -ms-transform: translate(-1px, -26px);
+    transform: translate(-1px, -26px);
+}
+
+.arrow_hidden {
+    opacity: 0%;
+    -webkit-transform: scale(0.15);
+    -moz-transform: scale(0.15);
+    -o-transform: scale(0.15);
+    -ms-transform: scale(0.15);
+    transform: scale(0.15);
+}
+
+.arrow_show_next {
+    opacity: 100%;
+    -webkit-transform: translateX(118px);
+    -moz-transform: translateX(118px);
+    -o-transform: translateX(118px);
+    -ms-transform: translateX(118px);
+    transform: translateX(118px);
+}
+
+.arrow_show_prev {
+    opacity: 100%;
+    -webkit-transform: translateX(-118px);
+    -moz-transform: translateX(-118px);
+    -o-transform: translateX(-118px);
+    -ms-transform: translateX(-118px);
+    transform: translateX(-118px);
+}
