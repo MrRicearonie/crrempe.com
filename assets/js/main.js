@@ -32,7 +32,7 @@ $(document).ready(function () {
         goToProjects();
     });
 
-//ABOUT BUTTON
+// ABOUT BUTTON
     $("#about_button").mouseenter(function () {
         $("#about_button").addClass('about_button_over').removeClass('about_button_normal');
     }).mouseleave(function () {
@@ -120,7 +120,7 @@ $(document).ready(function () {
         }
     });
 
-//PREVIOUS PROJECT
+// PREVIOUS PROJECT
     $("#prev_button").mouseenter(function () {
         $("#prev_button").addClass('project_button_over').removeClass('project_button_normal');
      }).mouseleave(function () {
