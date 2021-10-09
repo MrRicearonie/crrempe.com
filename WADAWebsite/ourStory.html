@@ -1,0 +1,152 @@
+<!-- WADA TEAM -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel=icon href="assets/img/Logo/favicon.png" type="image/png">
+    <title>WADA</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="assets/dist/aos.css" rel="stylesheet">
+    <link href="assets/dist/animista.css" rel="stylesheet">
+    <link href="assets/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-box shadow-drop-bottom">
+            <img class="logo" src="assets/img/Logo/WADANameLogo.png" width="125dp" />
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="top-content slide">
+                    <h3></br></br></br>Our Story</h3>
+                    <p>WADA was created by River Yearian (yeariar@wwu.edu), Cameron Wallace (wallac21@wwu.edu), Christopher Rempe (rempec@wwu.edu), and Jayson Morberg (morberj2@wwu.edu) for Western Washington University's Winter 2021 CSCI
+                        412 class by Dr. Shameem Ahmed.</p>
+                    <p>We decided to set out and create an app that would remind you that your plants needed to be watered since we know
+                        people with many plants which have become a chore to maintain a consistent watering schedule for.</p>
+                    <p>We used multiple screens for each part of the app: showing your plants, what you need to water for the day,
+                        creation/edit of a plant, and a map. We used Firebase to store all of the data in the cloud. A sound will play when
+                        you start up the app, and you can take a picture of the plant with the camera on your device. Google maps was
+                        included using a fragment.</p>
+                    <p>We looked at similar apps, including: </p>
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=net.kosev.watering" target="_blank" rel="noopener noreferrer">Waterbot</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=michaelcodesthings.my_jungle" target="_blank" rel="noopener noreferrer">My Jungle</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.plantiary" target="_blank" rel="noopener noreferrer">Plantiary</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.chebotarskyi.waterly" target="_blank" rel="noopener noreferrer">Waterly</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.atcorapps.plantcarereminder" target="_blank" rel="noopener noreferrer">Plant Care Reminder</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.ericandmackenzie.com" target="_blank" rel="noopener noreferrer">Plants Are Friends</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=us.crema.vera" target="_blank" rel="noopener noreferrer">Vera</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.behrang.plantdiary.app" target="_blank" rel="noopener noreferrer">Plant Diary</a></li>
+                    </ul>
+                    <p>After we took a look at these apps, the things that helped make decisions on how WADA would be set up includes a simple three page design, pictures for the plant profiles, and the ability to take notes. We did notice a lack of being able to add a plant to a specific room on some of these apps. A feature that was very important to us.</p>
+
+                    <h2></br>App Evolution</h2>
+                    <p>WADA has definitely evolved though the checkpoints due to time constraints. We originally were going to have a plant
+                    that grew every time you successfully watered your plants for the day as well as having a plant dictionary, but sadly we
+                    had to scrap both. We also were going to have a GPS feature that we just could not get implemented in time, and are left
+                    with just a map.</p>
+                    <p>Besides those things, our app progressed decently well. We first set up the account infrastructure with sign ups and
+                    logins, then added the ability to add a plant to said profile. Being able to update the plants, and set the watering
+                    schedule was up next, as well as getting the plants to show up for each day's watering page. We then added the
+                    notifications and the map. We spent sometime polishing things at the end. Things took longer than expected since we
+                    decided early on to use the Flutter framework to build the app instead of Java, and ran into some interesting issues
+                    with that, including null pointer errors, and some confusion on how to implement some things that we needed.</p>
+                    
+                    <h2></br>Final Product</h2>
+                    <h4>MVC</h4>
+                    <ul>
+                        <li>Model - Our model communicated with the database to get the login information, as well as getting the data for the plants.
+                        </br>       The model also will take in the information from the plant creation page and send it to the Firebase to be added.
+                        </li>
+                        <li>View - Our view will display the login page, as well as each page in the app.
+                        </br>       The view will display the data from the Firebase that was given to it from the model.
+                        </li>
+                        <li>Controller - Our controller take in the user input to create a plant, and sends it off to the model to be added to the Firebase.</li>
+                    </ul>
+
+                    <h4>Features</h4>
+                    <p>WADA currently allows the user to login/signup, add multiple plants to their profile, view all of their plants and 
+                        view just the plants that need to be watered that day. Each "plant profile" includes the name, picture, days of the 
+                        the week they need to be watered, their location in the house, and a space for any notes you want to take. When the 
+                        user goes to the watering page they are shown the plants that need to be watered separated by the rooms that they 
+                        are in. By clicking on the check box by their name, it will set them as watered and remove them from the list. A 
+                        notification will be sent out if a plant needs to be watered for the day.</p>
+                    <p>Photos for these features are on the previous page</p>
+
+                    <h4>Code:</h4>
+                    <a href="https://github.com/wada-team/wada" target="_blank" rel="noopener noreferrer">Click for GitHub</a>
+
+                    <h2></br>Video</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/61KtXhBtfuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <h2></br>Future Work</h2>
+                    <p>Since we used Flutter, the app definitely needs to be debugged more as well as optimizing the codebase so it will 
+                        run faster. After that, we can start adding the features we just didn't have time to implement. This includes adding 
+                        the growing plant every time the user waters all of their plants for the day, the plant dictionary, and being able to 
+                        use the GPS to remind the user that they should get someone else to water their plants for them if they are out of 
+                        a certian radius around their plants. This could also give users the ability to water other user's plants, making sure 
+                        the virtual plant in the app keeps growing, and the user's plants stay happy.</p>
+                    <a href="index.html" class="btn btn-primary btn-block">
+                        Go back
+                    </a>
+
+                    <div id="footer">
+                        <p class="copyright">
+                            Copyright &copy;
+                            <script type="text/javascript">document.write(new Date().getFullYear() + " ");</script>
+                            <noscript>2021 </noscript>
+                            WADA Team
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script>
+        function getTop() {
+            if (typeof pageYOffset != 'undefined') {
+                return pageYOffset;
+            } else {
+                var body = document.body;
+                var doc = document.documentElement
+                doc = (doc.clientHeight) ? doc : body;
+                return doc.scrollTop;
+            }
+        }
+
+        $(window).on("scroll", function () {
+            if (getTop() >= 500) {
+                $(".screenshot2").fadeIn('slow');
+            } else if (getTop() < 500) {
+                $(".screenshot2").fadeOut('slow');
+            };
+
+            if (getTop() >= 1000) {
+                $(".screenshot3").fadeIn('slow');
+            } else if (getTop() < 1000 && getTop() >= 500) {
+                $(".screenshot3").fadeOut('slow');
+            };
+        });
+    </script>
+    <script src="assets/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+</body>
