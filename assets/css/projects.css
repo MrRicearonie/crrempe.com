@@ -64,7 +64,7 @@
 
 /* placeholder for projects that are not next or previous */
 .otherProject {
-    opacity: 0%;
+    display: none;
 }
 
 .icon {
@@ -91,8 +91,31 @@
     border-radius: 10rem;
 }
 
-#astranno {
+#uw {
     z-index: 5;
+}
+
+#uwTitle {
+    color: #E7D3A2;
+}
+
+#uwIcon {
+    max-width: 50%;
+    max-height: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.uwWebsite_normal {
+    background-color: #E7D3A2;
+}
+
+.uwWebsite_over {
+    background-color: #f0e0b8;
+}
+
+#astranno {
+    z-index: 6;
 }
 
 #astrannoTitle {
@@ -115,7 +138,7 @@
 }
 
 #wificonnect {
-    z-index: 6;
+    z-index: 7;
 }
 
 #wificonnectTitle{
@@ -143,7 +166,7 @@
 }
 
 #pastSites {
-    z-index: 7;
+    z-index: 8;
 }
 
 #pastSitesTitle {

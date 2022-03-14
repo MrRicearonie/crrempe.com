@@ -41,6 +41,15 @@ $(document).ready(function () {
         goToAbout();
     });
 
+// UW WEBSITE
+    $("#uwWebsite").mouseenter(function() {
+        $("#uwWebsite").addClass("uwWebsite_over").removeClass("uwWebsite_normal");
+    }).mouseleave(function () {
+        $("#uwWebsite").addClass("uwWebsite_normal").removeClass("uwWebsite_over");
+    }).click(function () {
+        window.open('https://mrricearonie.github.io/portfolio/');
+    });
+
 // ASTRANNO WEBSITE
     $("#astrannoWebsite").mouseenter(function () {
         $("#astrannoWebsite").addClass('astrannoWebsite_over').removeClass('astrannoWebsite_normal');
@@ -86,7 +95,7 @@ $(document).ready(function () {
     }).mouseleave(function(){
         $("#next_button").removeClass('project_button_over').addClass('project_button_normal');
     }).click(function(){
-        if (project == 2) {
+        if (project == 3) {
             project = 0;
         } else {
             project = project + 1;
@@ -106,16 +115,20 @@ $(document).ready(function () {
 
         switch (project) {
             case 0:
+                $("#astranno").addClass('nextProject').removeClass('otherProject');
+                $("#astrannoIconBox").addClass('nextProject').removeClass('otherProject');
+                break;
+            case 1:
                 $("#wificonnect").addClass('nextProject').removeClass('otherProject');
                 $("#wificonnectIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
-            case 1:
+            case 2:
                 $("#pastSites").addClass('nextProject').removeClass('otherProject');
                 $("#pastSitesIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
             default:
-                $("#astranno").addClass('nextProject').removeClass('otherProject');
-                $("#astrannoIconBox").addClass('nextProject').removeClass('otherProject');
+                $("#uw").addClass('nextProject').removeClass('otherProject');
+                $("#uwIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
         }
     });
@@ -127,7 +140,7 @@ $(document).ready(function () {
         $("#prev_button").removeClass('project_button_over').addClass('project_button_normal');
     }).click(function () {
         if (project == 0) {
-            project = 2;
+            project = 3;
         } else {
             project = project - 1;
         }
@@ -150,6 +163,10 @@ $(document).ready(function () {
                 $("#pastSitesIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
             case 1:
+                $("#uw").addClass('prevProject').removeClass('otherProject');
+                $("#uwIconBox").addClass('prevProject').removeClass('otherProject');
+                break;
+            case 2:
                 $("#astranno").addClass('prevProject').removeClass('otherProject');
                 $("#astrannoIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
