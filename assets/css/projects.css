@@ -89,6 +89,7 @@
     width: 140px;
     text-align: center;
     border-radius: 10rem;
+    cursor: pointer;
 }
 
 #uw {
@@ -165,8 +166,47 @@
     transform: translateX(50%);
 }
 
-#pastSites {
+#pfproulette {
     z-index: 8;
+}
+
+#pfprouletteTitle {
+    color: #e95c5b;
+}
+
+#pfprouletteWebsite {
+    transition: all 0.75s ease; /* vendorless fallback */
+    -o-transition: all 0.75s ease; /* opera */
+    -ms-transition: all 0.75s ease; /* IE 10 */
+    -moz-transition: all 0.75s ease; /* Firefox */
+    -webkit-transition: all 0.75s ease; /*safari and chrome */
+}
+
+.pfproulette_normal {
+    background: linear-gradient(
+        125deg,
+        #f74040 0,
+        #ffaa00 100%
+        );
+    }
+    
+.pfproulette_over {
+    background: linear-gradient(
+        125deg,
+        #e95b5b 0%,
+        #fdb82e 100%
+    );
+}
+
+#pfprouletteIcon {
+    max-width: 50%;
+    max-height: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#pastSites {
+    z-index: 9;
 }
 
 #pastSitesTitle {
@@ -229,6 +269,7 @@
     text-align: center;
     border-radius: 10rem;
     z-index: 500;
+    cursor: pointer;
 
     transition: all 500ms; /* vendorless fallback */
     -o-transition: all 500ms; /* opera */

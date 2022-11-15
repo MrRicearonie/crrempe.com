@@ -77,6 +77,15 @@ $(document).ready(function () {
         window.open('https://itunes.apple.com/us/app/wi-fi-connect/id1049217112');
     });
 
+// PFPROULETTE WEBSITE
+    $("#pfprouletteWebsite").mouseenter(function () {
+        $("#pfprouletteWebsite").addClass('pfproulette_over').removeClass('pfproulette_normal');
+    }).mouseleave(function () {
+        $("#pfprouletteWebsite").addClass('pfproulette_normal').removeClass('pfproulette_over');
+    }).click(function () {
+        window.open('https://pfproulette.com');
+    });
+
 // PAST SITES WEBSITE
     $("#pastWebsite").mouseenter(function () {
         $("#pastWebsite").addClass('past_over').removeClass('past_normal');
@@ -95,7 +104,7 @@ $(document).ready(function () {
     }).mouseleave(function(){
         $("#next_button").removeClass('project_button_over').addClass('project_button_normal');
     }).click(function(){
-        if (project == 3) {
+        if (project == 4) {
             project = 0;
         } else {
             project = project + 1;
@@ -123,6 +132,10 @@ $(document).ready(function () {
                 $("#wificonnectIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
             case 2:
+                $("#pfproulette").addClass('nextProject').removeClass('otherProject');
+                $("#pfprouletteIconBox").addClass('nextProject').removeClass('otherProject');
+                break;
+            case 3:
                 $("#pastSites").addClass('nextProject').removeClass('otherProject');
                 $("#pastSitesIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
@@ -140,7 +153,7 @@ $(document).ready(function () {
         $("#prev_button").removeClass('project_button_over').addClass('project_button_normal');
     }).click(function () {
         if (project == 0) {
-            project = 3;
+            project = 4;
         } else {
             project = project - 1;
         }
@@ -170,9 +183,13 @@ $(document).ready(function () {
                 $("#astranno").addClass('prevProject').removeClass('otherProject');
                 $("#astrannoIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
-            default:
+            case 3:
                 $("#wificonnect").addClass('prevProject').removeClass('otherProject');
                 $("#wificonnectIconBox").addClass('prevProject').removeClass('otherProject');
+                break;
+            default:
+                $("#pfproulette").addClass('prevProject').removeClass('otherProject');
+                $("#pfprouletteIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
         }
     });
