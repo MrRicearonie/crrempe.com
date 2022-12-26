@@ -124,24 +124,24 @@ $(document).ready(function () {
 
         switch (project) {
             case 0:
+                $("#uw").addClass('nextProject').removeClass('otherProject');
+                $("#uwIconBox").addClass('nextProject').removeClass('otherProject');
+                break;
+            case 1:
                 $("#astranno").addClass('nextProject').removeClass('otherProject');
                 $("#astrannoIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
-            case 1:
+            case 2:
                 $("#wificonnect").addClass('nextProject').removeClass('otherProject');
                 $("#wificonnectIconBox").addClass('nextProject').removeClass('otherProject');
-                break;
-            case 2:
-                $("#pfproulette").addClass('nextProject').removeClass('otherProject');
-                $("#pfprouletteIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
             case 3:
                 $("#pastSites").addClass('nextProject').removeClass('otherProject');
                 $("#pastSitesIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
             default:
-                $("#uw").addClass('nextProject').removeClass('otherProject');
-                $("#uwIconBox").addClass('nextProject').removeClass('otherProject');
+                $("#pfproulette").addClass('nextProject').removeClass('otherProject');
+                $("#pfprouletteIconBox").addClass('nextProject').removeClass('otherProject');
                 break;
         }
     });
@@ -176,20 +176,20 @@ $(document).ready(function () {
                 $("#pastSitesIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
             case 1:
+                $("#pfproulette").addClass('prevProject').removeClass('otherProject');
+                $("#pfprouletteIconBox").addClass('prevProject').removeClass('otherProject');
+                break;
+            case 2:
                 $("#uw").addClass('prevProject').removeClass('otherProject');
                 $("#uwIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
-            case 2:
+            case 3:
                 $("#astranno").addClass('prevProject').removeClass('otherProject');
                 $("#astrannoIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
-            case 3:
+            default:
                 $("#wificonnect").addClass('prevProject').removeClass('otherProject');
                 $("#wificonnectIconBox").addClass('prevProject').removeClass('otherProject');
-                break;
-            default:
-                $("#pfproulette").addClass('prevProject').removeClass('otherProject');
-                $("#pfprouletteIconBox").addClass('prevProject').removeClass('otherProject');
                 break;
         }
     });
