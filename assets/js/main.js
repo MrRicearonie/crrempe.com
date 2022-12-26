@@ -104,6 +104,7 @@ $(document).ready(function () {
     }).mouseleave(function(){
         $("#next_button").removeClass('project_button_over').addClass('project_button_normal');
     }).click(function(){
+        console.log(project)
         if (project == 4) {
             project = 0;
         } else {
