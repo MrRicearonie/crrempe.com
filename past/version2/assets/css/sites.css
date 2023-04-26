@@ -1,0 +1,62 @@
+/* Fonts */
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../fonts/NotoSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("../fonts/NotoSans-Bold.ttf")
+}
+
+@font-face {
+    font-family: "NotoSans-Italic";
+    src: url("../fonts/NotoSans-Italic.ttf")
+}
+
+/* HTML */
+body {
+    background-color: #2b2b2b;
+    color:whitesmoke;
+    font-family: "NotoSans-Regular";
+    text-align: center;
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 52px;
+    font-family: "NotoSans-Bold";
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 240px;
+    text-align: center;
+    border-radius: 10rem;
+    box-shadow: 0 5px 20px rgb(40, 40, 40), 0 15px 30px rgba(40, 40, 40, 0.22);
+
+    -webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.button_normal {
+    background-color: #757575;
+}
+
+.button_over {
+    background: #4c4c4c;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
