@@ -1,17 +1,50 @@
+// import curDot from '/cursor-dot'
+
 // Do this when page loads
 $(document).ready(function () {
     animation();
+    $('html').css("cursor", "none")
 });
+
+$(window).on('load',function(){
+    $('body').css('overflow', 'auto')
+    $('.preloader-wrapper').fadeOut('slow')
+})
+
+const cursor = curDot({
+    diameter: 4,
+    borderWidth: 1,
+    background: '#fff',
+    borderColor: '#fff',
+    easing: 4
+})
+
+const cursor2 = curDot({
+    diameter: 20,
+    borderWidth: 1,
+    borderColor: '#fff',
+    easing: 5,
+    background: 'transparent'
+})
+
+cursor.over('.link', {
+    scale: 5,
+    background: '#fff'
+})
+
+cursor2.over('.link', {
+    scale: 0.3,
+    background: '#fff'
+})
 
 function animation() {
     gsap.registerPlugin(ScrollTrigger);
 
     const timeline1 = gsap.timeline({
         scrollTrigger: {
-            trigger: 'body',
+            trigger: '#starting-page',
             start: 'top top',
-            endTrigger: '#human-done',
-            end: 'bottom',
+            end: '+=2000',
             scrub: true,
             pin: '#starting-page',
             markers: true
@@ -22,14 +55,12 @@ function animation() {
     //     scrollTrigger: {
     //         trigger: '#card-done',
     //         start: 'top top',
-    //         endTrigger: '#human-done',
     //         end: 'bottom',
     //         scrub: true,
     //         markers: true
     //     }
     // })
 
-    console.log($(window).innerHeight()*0.50)
     timeline1.to('#me-card', {     
         keyframes: {
             '0%': {y:(-$(window).innerHeight()*0.36)+($('#me-card').height()*0.53)},
@@ -111,57 +142,127 @@ function animation() {
         keyframes: {
             '0%': {autoAlpha:0},
             '78.3%': {autoAlpha:0},
-            '78.4%': {autoAlpha: 1, scale: 1}
+            '78.4%': {autoAlpha: 1, scale: 1},
+            '90%': {autoAlpha: 1},
+            '100%': {autoAlpha: 0}
         },
         duration: 1.2
-    }, 0).to('#human-white', {
+    }, 0).to('#human-red', {
         keyframes: {
             '0%': {scale:0, autoAlpha:1},
-            '25%': {scale:1},
-            '100%': {scale:250}
+            '20%': {scale:250},
+            '98%': {autoAlpha: 1, scale: 250},
+            '98.1%': {autoAlpha: 0},
+            '99%': {scale: 250},
+            '99.1%': {scale: 0}
         },
-        duration: 3
-    }, '>').to('#human-red', {
+        duration: 1
+    }, '-=10%').to('#human-orange', {
         keyframes: {
-            '0%': {scale:1, autoAlpha:1},
-            '20%': {scale:1},
-            '40%': {scale:250}
+            '0%': {scale:0, autoAlpha:1},
+            '10%': {scale:0},
+            '30%': {scale:250},
+            '98.2%': {autoAlpha: 1, scale: 250},
+            '98.3%': {autoAlpha: 0},
+            '99.2%': {scale: 250},
+            '99.3%': {scale: 0}
         },
-        duration: 3
-    }, '<').to('#human-orange', {
-        keyframes: {
-            '0%': {scale:1, autoAlpha:1},
-            '30%': {scale:1},
-            '50%': {scale:250}
-        },
-        duration: 3
+        duration: 1
     }, '<').to('#human-yellow', {
         keyframes: {
-            '0%': {scale:1, autoAlpha:1},
-            '40%': {scale:1},
-            '60%': {scale:250}
+            '0%': {scale:0, autoAlpha:1},
+            '20%': {scale:0},
+            '40%': {scale:250},
+            '98.4%': {autoAlpha: 1, scale: 250},
+            '98.5%': {autoAlpha: 0},
+            '99.4%': {scale: 250},
+            '99.5%': {scale: 0}
         },
-        duration: 3
+        duration: 1
     }, '<').to('#human-green', {
         keyframes: {
-            '0%': {scale:1, autoAlpha:1},
-            '50%': {scale:1},
-            '70%': {scale:250}
+            '0%': {scale:0, autoAlpha:1},
+            '30%': {scale:0},
+            '50%': {scale:250},
+            '98.6%': {autoAlpha: 1, scale: 250},
+            '98.7%': {autoAlpha: 0},
+            '99.6%': {scale: 250},
+            '99.7%': {scale: 0}
         },
-        duration: 3
+        duration: 1
     }, '<').to('#human-blue', {
         keyframes: {
-            '0%': {scale:1, autoAlpha:1},
-            '60%': {scale:1},
-            '80%': {scale:250}
+            '0%': {scale:0, autoAlpha:1},
+            '40%': {scale:0},
+            '60%': {scale:250},
+            '98.8%': {autoAlpha: 1, scale: 250},
+            '98.9%': {autoAlpha: 0},
+            '99.8%': {scale: 250},
+            '99.9%': {scale: 0}
         },
-        duration: 3
+        duration: 1
     }, '<').to('#human-purple', {
         keyframes: {
-            '0%': {scale:1, autoAlpha:1},
-            '70%': {scale:1},
-            '90%': {scale:250}
+            '0%': {scale:0, autoAlpha:1},
+            '50%': {scale:0},
+            '70%': {scale:250},
+            '98%': {autoAlpha: 1, scale:1000},
+            '99.95': {autoAlpha: 0},
+            '100%': {scale: 0}
         },
-        duration: 3
-    }, '<')
+        duration: 1
+    }, '<').to('#starting-page', {
+        duration: 0.1,
+        backgroundColor: '#7c3aed'
+    }, '-=0.1')
+    // .to('#human-white', {
+    //     keyframes: {
+    //         '0%': {scale:0, autoAlpha:1},
+    //         '25%': {scale:1},
+    //         '100%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '>').to('#human-red', {
+    //     keyframes: {
+    //         '0%': {scale:1, autoAlpha:1},
+    //         '20%': {scale:1},
+    //         '40%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '<').to('#human-orange', {
+    //     keyframes: {
+    //         '0%': {scale:1, autoAlpha:1},
+    //         '30%': {scale:1},
+    //         '50%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '<').to('#human-yellow', {
+    //     keyframes: {
+    //         '0%': {scale:1, autoAlpha:1},
+    //         '40%': {scale:1},
+    //         '60%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '<').to('#human-green', {
+    //     keyframes: {
+    //         '0%': {scale:1, autoAlpha:1},
+    //         '50%': {scale:1},
+    //         '70%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '<').to('#human-blue', {
+    //     keyframes: {
+    //         '0%': {scale:1, autoAlpha:1},
+    //         '60%': {scale:1},
+    //         '80%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '<').to('#human-purple', {
+    //     keyframes: {
+    //         '0%': {scale:1, autoAlpha:1},
+    //         '70%': {scale:1},
+    //         '90%': {scale:250}
+    //     },
+    //     duration: 3
+    // }, '<')
 }

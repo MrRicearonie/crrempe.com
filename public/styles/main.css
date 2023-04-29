@@ -1,5 +1,6 @@
 body {
     font-family: 'Yeseva One', cursive;
+    overflow: hidden;
 }
 
 #hello {
@@ -48,11 +49,6 @@ body {
     z-index: 8;
 }
 
-#human-white {
-    z-index: 9;
-    visibility: hidden;
-}
-
 #human-red {
     z-index: 2;
     visibility: hidden;
@@ -83,23 +79,38 @@ body {
     visibility: hidden;
 }
 
-/* svg {
-  width: 300px;
-  display: block;
-  position: absolute;
+@keyframes loader-white {
+    0% {transform: scale(0,0);}
+    100% {transform: scale(1);}
 }
 
-@keyframes dash {
-    from {
-        stroke-dashoffset: 8000;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+@keyframes loader-gray {
+    0% {transform: scale(0,0);}
+    25% {transform: scale(0,0);}
+    100% {transform: scale(1);}
 }
 
-.path {
-    stroke-dasharray: 320;
-    stroke-dashoffset: 0;
-    animation: dash 30s linear infinite;
-} */
+
+.loader {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 50%;
+}
+
+.loader-inner-white {
+    width: 75px;
+    height: 75px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: loader-white 1s ease-in-out infinite;
+}
+
+.loader-inner-gray {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 50%;
+    animation: loader-gray 1s ease-in-out infinite;
+}
+
